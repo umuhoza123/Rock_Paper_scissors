@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Rock Paper Scissors</h1>
+    <div class="scoreboard">
+      <div class="score">
+        <span id="player-score">0</span>
+        <span>:</span>
+        <span id="computer-score">0</span>
+      </div>
+    </div>
+    <div class="game">
+      <div class="choices">
+        <button class="btn btn-rock" onclick="playGame('rock')">
+          <i class="fas fa-hand-rock"></i>
+        </button>
+        <button class="btn btn-paper" onclick="playGame('paper')">
+          <i class="fas fa-hand-paper"></i>
+        </button>
+        <button class="btn btn-scissors" onclick="playGame('scissors')">
+          <i class="fas fa-hand-scissors"></i>
+        </button>
+      </div>
+      <div class="result">
+        <p id="player-choice"></p>
+        <p id="computer-choice"></p>
+        <h2 id="game-result"></h2>
+      </div>
+    </div>
+  </div>
+  <script src="./script/script.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
